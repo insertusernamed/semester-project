@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>About</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        body{
+            background-color:#218c74 ;
+        }
+        /* Create three equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+        
+          height: 200%; /* Should be removed. Only for demonstration */
+         
+        }
+        h1{
+           text-align: center;
+           position: absolute;
+top:0;
+font-size: 65px;
+-webkit-text-fill-color: #ffb142;
+        }
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+         
+        }
+        h2{
+            background-color:#706fd3 ;
+            text-align: center;
+            font-size: 30px;
+           
+
+        }
+        p{
+            -webkit-text-fill-color:  #cc8e35;
+            font-size: 30px;
+        }
+        </style>
+</head>
+
+<body>
+   <h1>ABOUT OUR CoolMathGames2</h1>
+    <div class="row">
+        <div class="column" style="background-color:#521018;">
+          <h2>Mix&Match</h2>
+          <p>A common children's game played with a set of cards. The cards have a pictures on one side and each picture appears on two cards. The game starts with all the cards face down and the player turns over two cards. If the two cards have the same picture, then they stay uncovered as a set, otherwise they turn the cards face down again. You win if you get all the matches within the allotted time period.</p>
+        </div>
+        <div class="column" style="background-color:#b33939;">
+          <h2>Hangman</h2>
+          <p>Popular childrens game of spelling and thinking, Hangman requires thought into word length and letter selection. Rules: Once started, guess the letters to fill in the blank spaces. number of failures will be listed on the board. guess the full word and win. failure to do so results in a loss.</p>
+        </div>
+        <div class="column" style="background-color:#474787;">
+          <h2>Number Guesser</h2>
+          <p>Rules: type in a number or use the arrows to pick your number. once your number is entered, you will get a message saying if ur too high or too low. guess correctly and you win. guess wrong and you lose. range is 1-100.</p>
+        </div>
+      </div>
+</body>
+
+</html>
