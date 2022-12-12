@@ -7,11 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hangman</title>
   <style>
-    @font-face {
-    font-family: comicSans;
-    src: url(/fonts/comic.ttf);
-    }
-
     html {
       font-family: sans-serif;
     }
@@ -50,13 +45,24 @@
       border-radius: 20px;
       border: 3px solid;
       border-color: rgb(0, 0, 0);
-      color: black;
+      color: #black;
       font-family: comicSans;
       width: 70px;
       font-size: 150%;
       display: flex;
       justify-content: center;
       margin: auto;
+    }
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+      align-items: center;
+      gap: 3em;
+      background-color: #f7f1e3;
+      height: 50px;
+      margin: 0;
     }
 
     footer {
@@ -66,20 +72,21 @@
       justify-content: center;
       position: absolute;
       bottom: 0;
-      left: 0;
+      left 0;
     }
   </style>
 </head>
 
 <body>
-
-
-
+  <ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">Mix&Match</a></li>
+    <li><a href="">Number Guesser</a></li>
+    <li><a href="">About</a></li>
+  </ul>
   <header>
     <h1>Welcome to Hangman.</h1>
   </header>
-
-
   <p COLSPAN=2 ALIGN=CENTER>The objective here is to guess the word within 10 guesses. Click start to begin.</p>
   <p COLSPAN=2 ALIGN=CENTER>Dont let stick boi get killed!</p>
   <FORM NAME="f">
@@ -131,11 +138,6 @@
       </TABLE>
     </center>
   </FORM>
-
-
-
-
-
   <SCRIPT LANGUAGE="javascript">
     var alpha = new Array();
     var alpha_index = 0;
@@ -212,10 +214,6 @@
       }
     }
   </SCRIPT>
-
-
-
-
   <footer>
     <p>&copy; Credit to Denver Traves 200460321 on this beautiful lookin turd of a webpage. not a visual appealing
       making person. not grammar person so hope made sense</p>
