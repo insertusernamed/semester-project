@@ -1,12 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="./styles/mixmatch.css" rel="stylesheet">
+  <script src="./js/mixmatch.js" async></script>
+  <title>Mix and Match</title>
 </head>
+
 <body>
-    
+  <nav>
+    <ul>
+      <li>
+        <a href="./guessNumber.html">Guess a Number</a>
+      </li>
+      <li>
+        <a href="./guessWord.html">Guess a Word</a>
+      </li>
+      <li>
+        <a href="./mixMatch.html">Mix and Match</a>
+      </li>
+      <li>
+        <a href="./about.html">About</a>
+      </li>
+    </ul>
+  </nav>
+
+  <h1 class="page-title">Mix and Match</h1>
+  <div class="overlay-text visible">
+    Click to Start!
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    you lost...
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    you won!
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+
+  <div class="gameSpace">
+    <div class="game-info-container">
+      <div class="game-info">
+        Time <span id="time-remaining">100</span>s
+      </div>
+      <div class="game-info">
+        Flips <span id="flips">0</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cardDesign" src="./img/card-back.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./img/icons/airplane.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cardDesign" src="./img/card-back.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./img/icons/airplane.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cardDesign" src="./img/card-back.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./img/icons/balloon.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cardDesign" src="./img/card-back.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./img/icons/balloon.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cardDesign" src="./img/card-back.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./img/icons/book.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cardDesign" src="./img/card-back.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./img/icons/book.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cardDesign" src="./img/card-back.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./img/icons/bowl.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cardDesign" src="./img/card-back.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./img/icons/bowl.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cardDesign" src="./img/card-back.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./img/icons/cat.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cardDesign" src="./img/card-back.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./img/icons/cat.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cardDesign" src="./img/card-back.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./img/icons/dog.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cardDesign" src="./img/card-back.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./img/icons/dog.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cardDesign" src="./img/card-back.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./img/icons/person.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cardDesign" src="./img/card-back.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./img/icons/person.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cardDesign" src="./img/card-back.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./img/icons/turtle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="cardDesign" src="./img/card-back.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./img/icons/turtle.png">
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>
